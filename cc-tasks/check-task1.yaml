@@ -1,0 +1,14 @@
+---
+platform: linux
+
+image_resource:
+  type: registry-image
+  source: { repository: bash }
+params:
+  VAULT_PARAM: ((sample_field))
+run:
+  path: /usr/local/bin/bash
+  args:
+    - -euc
+    - |
+      echo "Vault value for field (sample_field) is: ${VAULT_PARAM}"

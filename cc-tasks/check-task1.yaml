@@ -11,4 +11,4 @@ run:
   args:
     - -euc
     - |
-      echo "Vault trigger value for field (sample_field) is: ${VAULT_PARAM}"
+      echo "Vault trigger2 value for field (sample_field) is: ${VAULT_PARAM}"
